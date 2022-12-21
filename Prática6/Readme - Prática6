@@ -1,0 +1,11 @@
+Desenvolvimento: Prática 6
+
+A prática 6 objetiva a utilização da Raspberry com câmera modular conectada. Esta câmera deverá ser utilizada em uma estação climática.
+Para implementação, deve ser construir um código, em python, para a obtenção da imagem desta câmera, registrando uma foto para a comprovação, e, além disto, deve-se acessar a estação climática da UFSC via API para a obtenção dos dados do tempo. Isso tudo a ser descrito em repositório GitHub.
+
+ Para a implementação da câmera modulada, primeiramente, é configutado a comunicação I2C para a recepção das imagens da câmera e utiliza-se a biblioteca picamera, contendo funções de obtenção das imagens.
+ O código implementado, na linha 15 configura a definição da imagem da câmera para 2592x1944 pixels e, após 5 segundos de espera, pela linha 18, faz-se a captura de uma imagem salva como max.jpg. Esta imagem foi renomeada para foto.jpg e está disponível no repositório da Prática 6 do Git Hub. 
+ 
+ Para o acesso aos dados climáticos, utiliza-se a API da oracle, através do link associado na linha 7, tal que a base desejada é descrita pelo código 966583. Além disto, determina-se, nas linhas 8 e 9, as coordenadas relativas ao local desejado para visualização do tempo. Os dados são salvos em arquivos json, na linha 10 e exibidos para visualização na linha 11.
+ 
+ 
